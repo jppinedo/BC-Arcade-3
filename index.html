@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Juan Pablo Pinedo">
+  <title>Arcade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="game-selection" class="container">
+    <h1>Arcade</h1>
+    <h2><span>Choose your game</span></h2>
+    <h3>What would you like to play?</h1>
+    <button type="button" onclick="playGuessingGame()">Guiessing Game</button>
+    <button type="button" onclick="playMagicBall()">Magic Eight Ball</button>
+    <button type="button" onclick="playBNH()">Bear - Ninja - Hunter</button>
+  </div>
+  <div id="game-reload" style="display: none;" class="container">
+    <h1>Arcade</h1>
+    <h2><span>Choose your game</span></h2>
+    <h3>Thank you for using the arcade!</h1>
+    
+    <table cellpadding="0" cellspacing="0" class="info-table">
+      <thead>
+        <tr>
+          <th>Games Played</th>
+          <th>Won Games</th>
+          <th>Average Wins</th>
+        </tr>
+      </thead>
+      <tbody id="info-table"></tbody>
+    </table>
+    <div class="medal-container">
+      <img src="images/medal.svg" id="medal-image" />
+      <p id="medal-text">Medal text</p>
+    </div>
+    <button type="button" onclick="reloadPage()">Reload page</button>
+  </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
